@@ -5,19 +5,58 @@
 
 body {
     margin: 0;
-    font-family: var(--general-font);
+}
+
+button {
+    background-color: var(--peach);
+    color: var(--cream-subtle);
+    border-style: none;
+    border-radius: 5px;
+    height: 48px;
+    width: 180px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 24px 0px;
+    box-shadow: 2px 2px 3px var(--dark-green-transluscent);
+}
+
+em {
+    color: var(--soft-green);
+    font-weight: 900;
+}
+
+h1 {
+    font-weight: 600;
+    color: rgb(53, 61, 31);
+    margin:0px;
+}
+
+input {
+    border: 1px solid var(--mid-peach);
+    border-radius: 5px;
+    height: 1.5rem;
+    width: 240px;
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
 }
 
 :root {
     --header-font: 'Cinzel Decorative', cursive;
     --general-font: 'Open Sans', sans-serif;
 
-    --dark-green-transluscent: rgba(37, 42, 22, 0.5);
+    --dark-green-transluscent: rgba(37, 42, 22, 0.3);
     --dark-green: rgb(37, 42, 22);
     --soft-green: rgb(132, 138, 110);
     --cream: rgb(255, 231, 210);
+    --cream-subtle: rgb(255, 248, 241);
     --mid-peach: rgb(214, 157, 136);
     --peach: rgb(204, 106, 70);
+
+    font-family: var(--general-font);
+    color: rgb(70, 43, 36)
 }
 
 .company-name {
@@ -35,14 +74,40 @@ body {
     width: 100vw;
 }
 
+.form-container {
+    background-color: var(--cream-subtle);
+    padding: 32px;
+    box-shadow: 1px 1px 5px var(--mid-peach);
+}
+
+.form-footer {
+    padding: 0px 32px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    justify-content: start;
+    align-items: start;
+    gap: 16px 96px;
+}
+
+.info {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-left: 32px;
+    padding-bottom: 5vh;
+}
+
 .left-panel {
     display: flex;
     flex-direction: column;
     background-image: url('nati-melnychuk-6crQOH591PQ-unsplash.jpg');
     background-size: cover;
-    width: 55vw;
+    width: max(30vw, 560px);
     justify-content:space-between;
     padding-top: 15vh;
+    flex-shrink: 0;
 }
 
 .logo {
@@ -58,15 +123,20 @@ body {
     justify-content: center;
 }
 
+.page-bottom {
+    padding: 0px 32px;
+}
+
 .photo-credit {
-    color: var(--cream);
+    color: var(--cream-subtle);
     background-color: var(--dark-green-transluscent);
 }
 
 .right-panel {
     display: flex;
     flex-direction: column;
-    background-color: bisque;
+    justify-content: center;
+    background-color: var(--cream);
 }
 
 a:link {
