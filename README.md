@@ -1,2 +1,2 @@
 # mock-sign-up-form
-Project assignment for The Odin Project
+Project assignment for The Odin Project.
