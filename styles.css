@@ -3,3 +3,21 @@
 :root {
     --header-font: 'Cinzel Decorative', cursive;
 }
+
+.flex-horizontal {
+    display: flex;
+    align-items: stretch;
+}
+
+.left-panel {
+    background-image: url('nati-melnychuk-6crQOH591PQ-unsplash.jpg');
+    width: 30%;
+    height: 100%;
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    height: 100%;
+}
