@@ -47,7 +47,8 @@ label {
     --header-font: 'Cinzel Decorative', cursive;
     --general-font: 'Open Sans', sans-serif;
 
-    --blue: rgb(78, 174, 186);
+    --invalid: rgb(240, 56, 0);
+    --valid: rgb(78, 174, 186);
     --dark-green-transluscent: rgba(37, 42, 22, 0.3);
     --dark-green: rgb(37, 42, 22);
     --soft-green: rgb(132, 138, 110);
@@ -149,14 +150,26 @@ a:visited {
     color: var(--mid-peach);
 }
 
-input:focus {
-    border: 1px solid var(--blue);
+input:focus:invalid {
+    border: 1px solid var(--invalid);
     outline: none;
-    box-shadow: 1px 1px 2px var(--blue);
+    box-shadow: 1px 1px 2px var(--invalid);
+}
+
+input:focus:valid {
+    border: 1px solid var(--valid);
+    outline: none;
+    box-shadow: 1px 1px 2px var(--valid);
 }
 
 label::after + :required {
     content: " *";
     color: red;
     display: inline;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    border: 1px solid var(--invalid);
+    outline: none;
+    box-shadow: 1px 1px 2px var(--invalid);
 }
