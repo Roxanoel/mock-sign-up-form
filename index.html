@@ -37,19 +37,22 @@
                     <div class="form-grid">
                         <div class="labeled-input">
                             <label for="first-name">First name</label>
-                            <input type="text" id="first-name" required>
+                            <input type="text" id="first-name" placeholder="Jane" required>
                         </div>
                         <div class="labeled-input">
                             <label for="last-name">Last name</label>
-                            <input type="text" id="last-name" required>
+                            <input type="text" id="last-name" placeholder="Doe" required>
                         </div>
                         <div class="labeled-input">
                             <label for="email">Email</label>
-                            <input type="email" id="email" required>
+                            <input type="email" id="email" placeholder="example@gmail.com" required>
                         </div>
                         <div class="labeled-input">
                             <label for="phone-number">Phone number</label>
-                            <input type="text" id="phone-number" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$">
+                            <input type="text" id="phone-number" 
+                                pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+                                title = "Please enter your phone number without spaces"
+                                placeholder="+1919367788755">
                         </div>
                         <div class="labeled-input">
                             <label for="password">Password</label>
