@@ -122,6 +122,7 @@ label {
     background-color: var(--dark-green-transluscent);
     align-items: center;
     justify-content: center;
+    gap: 24px;
 }
 
 .page-bottom {
